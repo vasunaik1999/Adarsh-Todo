@@ -35,6 +35,7 @@
             @endif
 
             <form action="{{url('/todo/'.$todo->id.'/update')}}" method="POST">
+                @method('PUT')
                 @csrf
                 <div class="mb-3">
                     <label for="todo_name" class="form-label">Todo Name</label>

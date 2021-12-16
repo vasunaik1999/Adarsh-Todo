@@ -26,7 +26,7 @@ Route::get('/todo','App\Http\Controllers\TodoController@index')->name('todo.inde
 Route::get('/todo/create','App\Http\Controllers\TodoController@create')->name('todo.create');
 Route::post('/todo/store','App\Http\Controllers\TodoController@store')->name('todo.store');
 Route::get('/todo/{todo}/edit','App\Http\Controllers\TodoController@edit')->name('todo.edit');
-Route::post('/todo/{todo}/update','App\Http\Controllers\TodoController@update')->name('todo.update');
+Route::put('/todo/{todo}/update','App\Http\Controllers\TodoController@update')->name('todo.update');
 Route::get('/todo/{todo}/delete','App\Http\Controllers\TodoController@destroy')->name('todo.delete');
 Route::get('/todo/{todo}/mark-complete','App\Http\Controllers\TodoController@markComplete')->name('todo.mark.complete');
 Route::get('/todo/{todo}/mark-incomplete','App\Http\Controllers\TodoController@markIncomplete')->name('todo.mark.incomplete');
